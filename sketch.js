@@ -4,11 +4,11 @@ const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 const Constraint  = Matter.Constraint;
 
-var tree, treeImg, boy, boyImg;
+var tree, treeImg, girl, girlImg;
 
 function preload(){
  treeImg = loadImage("tree.png");
- boyImg = loadImage("boy.png");
+ girlImg = loadImage("girl.png");
 }
 
 function setup(){
@@ -21,9 +21,9 @@ function setup(){
 	tree.addImage(treeImg);
 	tree.scale = 0.4;
 
-  boy = createSprite(200,525,20,20);
-	boy.addImage(boyImg);
-	boy.scale = 0.1;
+  girl = createSprite(150,450,20,20);
+	girl.addImage(girlImg);
+	girl.scale = 0.04;
 	
 	ground = new Ground(500,590,1000,20);
 	stone = new Stone(200,200,70);
